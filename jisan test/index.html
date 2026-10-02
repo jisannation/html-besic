@@ -53,14 +53,15 @@ Apache with mod_rewrite or NGINX
 
 HTTPS Support
 
-Required for secure transactions</pre>
+Required for secure transactions Core
+ Capabilities & Developer Tools</pre>
             </aside>
        
        <hr>
         </div>
 
-        <section
-            <h2>Core Capabilities & Developer Tools</h2>
+        <section>
+            <h2>code</h2>
             <p>
                 Developers can modify output using action hooks and filter hooks.<br>
                 For example, functions can be registered via code:
@@ -84,7 +85,7 @@ add_action('after_setup_theme', 'custom_theme_setup');</code></pre>
 
         <hr>
 
-        <section
+        <section>
             <h2>Ecosystem Overview</h2>
             <p>WordPress relies on distinct architectural pillars:</p>
             <ol>
@@ -178,6 +179,33 @@ add_action('after_setup_theme', 'custom_theme_setup');</code></pre>
         </section>
 
         <hr>
+<section>
 
-        <section
+    <h2>submit form</h2>
+
+<form action="#" method="POST">
+    
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+    
+    <textarea name="thoughts" id="thoughts" rows="8" cols="35" placeholder="Write your thoughts about WordPress....."></textarea><br><br>
+
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit"> <br><br>
+    <select name="topic" id="topic">
+        <option value="wordpress">wordpress</option>
+        <option value="elementor">elementor</option>
+        <option value="woocommerce">woocommerce</option>
+    </select>
+</form>
+<hr>
+
+
+
      <body/>       
