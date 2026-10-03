@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress</title>
+</head>
+<body>
+
+    <center>
+
+        <header>
+            <h1>WordPress</h1>
+        </header>
+
+        <hr>
+
+        <main>
+            <div>
+                <h2>Introduction to WordPress</h2>
+                <article>
+                    <h3>What is WordPress?</h3>
+                    <p>
+                        WordPress is a free and open-source web publishing platform.<br>
+                        It was originally created by Matt Mullenweg and Mike Little in 2003 as a fork of <b>b2/cafelog</b>.<br>
+                        Today, it runs on <strong>PHP</strong> and pairs with <strong>MySQL</strong> or <strong>MariaDB</strong> databases.
+                    </p>
+                    <p>
+                        WordPress allows users to build dynamic websites without deep coding knowledge, while also providing <em>full extensibility</em> for software engineers through custom APIs and hooks.
+                    </p>
+                </article>
+
+                <aside>
+                    <h4>Technical Specifications</h4>
+                    <pre>Core Language
+
+PHP version 7.4 or greater
+
+Database Server
+
+MySQL version 8.0+ or MariaDB version 10.5+
+
+Web Server
+
+Apache with mod_rewrite or NGINX
+
+HTTPS Support
+
+Required for secure transactions Core
+ Capabilities & Developer Tools</pre>
+                </aside>
+            </div>
+
+            <hr>
+
+            <section>
+                <div>
+                    <h2>code</h2>
+                    <p>
+                        Developers can modify output using action hooks and filter hooks.<br>
+                        For example, functions can be registered via code:
+                    </p>
+                    <pre><code>function custom_theme_setup() {
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'custom_theme_setup');</code></pre>
+
+                    <p>
+                        Legacy widgets are now <del>deprecated</del> and replaced by <u>Gutenberg block patterns</u>
+                    </p>
+                    <p>
+                        Highlighted standard: <mark>Strict adherence to GPLv2 licensing ensures community freedom.</mark>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <div>
+                <h2>Ecosystem Overview</h2>
+                <p>WordPress relies on distinct architectural pillars:</p>
+                <ol align="left" style="display: inline-block;">
+                    <li><strong>Core Software:</strong> The foundational application files.</li>
+                    <li><strong>Themes:</strong> The display presentation layer.</li>
+                    <li><strong>Plugins:</strong> Addon modules that extend platform features.</li>
+                    <li><strong>Database:</strong> Storage for posts, pages, options, and user tables.</li>
+                </ol>
+
+                <h3>Popular Plugins Comparison</h3>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Plugin Name</th>
+                            <th>Category</th>
+                            <th>Active Installs</th>
+                            <th>Target Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WooCommerce</td>
+                            <td>E-Commerce</td>
+                            <td>5+ Million</td>
+                            <td>Online stores, digital downloads, and checkout flows</td>
+                        </tr>
+                        <tr>
+                            <td>Yoast SEO</td>
+                            <td>Search Optimization</td>
+                            <td>5+ Million</td>
+                            <td>XML sitemaps, meta descriptions, and schema markup</td>
+                        </tr>
+                        <tr>
+                            <td>Wordfence Security</td>
+                            <td>Security</td>
+                            <td>4+ Million</td>
+                            <td>Firewall rules, login protection, and file scans</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Custom Fields</td>
+                            <td>Development</td>
+                            <td>2+ Million</td>
+                            <td>Custom meta boxes and flexible content fields</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>wordpress Media</h2>
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXP65Znjnj3A9TMPCnoSk0pU-kLEqPTs-f9m2vooGsy2YK8dtxtJJzXHI&s=10" alt="WordPress Logo">
+
+                <hr>
+
+                <h3>Watch wordpress tutorial</h3>
+                <br>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/4fzdDSMjteI?si=XRvDOylZicvjXAoL&amp;start=3863" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <details>
+                    <ul align="left" style="display: inline-block;">
+                        <li>WP_Theme</li>
+                        <li>WP_Plugin</li>
+                        <li>WP_Elementor</li>
+                        <li>WP_Page</li>
+                        <li>WP_Post</li>
+                        <li>WP_ECommerce</li>
+                        <li>WP_Product_Page</li>
+                        <li>WP_Header_Footer</li>
+                    </ul>
+                </details>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>submit form</h2>
+
+                <form action="#" method="POST">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+                    <textarea name="thoughts" id="thoughts" rows="8" cols="35" placeholder="Write your thoughts about WordPress....."></textarea><br><br>
+
+                    <select name="topic" id="topic">
+                        <option value="wordpress">wordpress</option>
+                        <option value="elementor">elementor</option>
+                        <option value="woocommerce">woocommerce</option>
+                    </select><br><br>
+
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <hr>
+        </main>
+
+    </center>
+
+</body>
+</html>
