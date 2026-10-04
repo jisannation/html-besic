@@ -3,224 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordPress | Developer Platform</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>WordPress</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1><i class="fa-brands fa-wordpress"></i> WordPress</h1>
-        </header>
+    <header>
 
-        <section class="card">
-            <div class="card-header">
-                <i class="fa-solid fa-circle-info"></i>
-                <h2>Introduction to WordPress</h2>
-            </div>
-            <div class="two-col">
-                <article>
-                    <h3>What is WordPress?</h3>
-                    <p>
-                        WordPress is a free and open-source web publishing platform. It was originally created by Matt Mullenweg and Mike Little in 2003 as a fork of <b>b2/cafelog</b>. Today, it runs on <strong>PHP</strong> and pairs with <strong>MySQL</strong> or <strong>MariaDB</strong> databases.
-                    </p>
-                    <p>
-                        WordPress allows users to build dynamic websites without deep coding knowledge, while also providing <em>full extensibility</em> for software engineers through custom APIs and hooks.
-                    </p>
-                </article>
+        <center>
+     <h1>WordPress</h1>
+        </center>
+        
+        
+    </header>
 
-                <aside>
-                    <h4><i class="fa-solid fa-server"></i> Technical Specifications</h4>
-                    <pre>Core Language
+    <hr>
+
+    <main>
+        <div>
+            <h2>Introduction to WordPress</h2>
+            <article>
+                <h3>What is WordPress?</h3>
+                <p>
+                    WordPress is a free and open-source web publishing platform.<br>
+                    It was originally created by Matt Mullenweg and Mike Little in 2003 as a fork of <b>b2/cafelog</b>.<br>
+                    Today, it runs on <strong>PHP</strong> and pairs with <strong>MySQL</strong> or <strong>MariaDB</strong> databases.
+                </p>
+                <P>
+                     WordPress allows users to build dynamic websites without deep coding knowledge, while also providing <em>full extensibility</em> for software engineers through custom APIs and hooks.
+                </P>
+                   
+                
+            </article>
+
+            <aside>
+                <h4>Technical Specifications</h4>
+                <pre>Core Language
+
 PHP version 7.4 or greater
 
 Database Server
+
 MySQL version 8.0+ or MariaDB version 10.5+
 
+
 Web Server
+
 Apache with mod_rewrite or NGINX
 
 HTTPS Support
-Required for secure transactions Core Capabilities & Developer Tools</pre>
-                </aside>
-            </div>
-        </section>
 
-        <section class="card">
-            <div class="card-header">
-                <i class="fa-solid fa-code"></i>
-                <h2>Code & Architecture</h2>
-            </div>
+Required for secure transactions Core
+ Capabilities & Developer Tools</pre>
+            </aside>
+       
+       <hr>
+        </div>
+
+        <section>
+           
+            <div>
+
+            <h2>code</h2>
             <p>
-                Developers can modify output using action hooks and filter hooks. For example, functions can be registered via code:
+                Developers can modify output using action hooks and filter hooks.<br>
+                For example, functions can be registered via code:
             </p>
-            <div class="code-container">
-                <code>function custom_theme_setup() {
+            <pre><code>function custom_theme_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 }
-add_action('after_setup_theme', 'custom_theme_setup');</code>
-            </div>
-            <div class="badge-list">
-                <p>Legacy widgets are now <del>deprecated</del> and replaced by <u>Gutenberg block patterns</u>.</p>
-                <p>Highlighted standard: <mark>Strict adherence to GPLv2 licensing ensures community freedom.</mark></p>
-            </div>
+add_action('after_setup_theme', 'custom_theme_setup');</code></pre>
+
+            <p>
+                Legacy widgets are now <del>deprecated</del> and replaced by
+
+                <u>Gutenberg block patterns </u>
+            </p>
+            <p>
+                Highlighted standard: <mark>Strict adherence to GPLv2 licensing ensures community freedom.</mark> 
+            </p>
+</div>
         </section>
 
-        <section class="card">
-            <div class="card-header">
-                <i class="fa-solid fa-cubes"></i>
-                <h2>Ecosystem Overview</h2>
-            </div>
+        <hr>
+
+        <div>
+            <h2>Ecosystem Overview</h2>
             <p>WordPress relies on distinct architectural pillars:</p>
             <ol>
-                <li><strong>Core Software:</strong> The foundational application files.</li>
-                <li><strong>Themes:</strong> The display presentation layer.</li>
-                <li><strong>Plugins:</strong> Addon modules that extend platform features.</li>
-                <li><strong>Database:</strong> Storage for posts, pages, options, and user tables.</li>
+                <li>
+                    <strong>Core Software:</strong> The foundational application files.
+                </li>
+                <li>
+                    <strong>Themes:</strong> The display presentation layer.
+                </li>
+                <li>
+                    <strong>Plugins:</strong> Addon modules that extend platform features.
+                </li>
+                <li>
+                    <strong>Database:</strong> Storage for posts, pages, options, and user tables.
+                </li>
             </ol>
 
-            <div class="card-header" style="margin-top: 1.5rem; border: none; padding-bottom: 0;">
-                <i class="fa-solid fa-table-list"></i>
-                <h3 style="font-size: 1.15rem; font-weight: 600;">Popular Plugins Comparison</h3>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Plugin Name</th>
-                            <th>Category</th>
-                            <th>Active Installs</th>
-                            <th>Target Use</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><i class="fa-solid fa-cart-shopping"></i> WooCommerce</td>
-                            <td>E-Commerce</td>
-                            <td>5+ Million</td>
-                            <td>Online stores, digital downloads, and checkout flows</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-chart-line"></i> Yoast SEO</td>
-                            <td>Search Optimization</td>
-                            <td>5+ Million</td>
-                            <td>XML sitemaps, meta descriptions, and schema markup</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-shield-halved"></i> Wordfence Security</td>
-                            <td>Security</td>
-                            <td>4+ Million</td>
-                            <td>Firewall rules, login protection, and file scans</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-pen-ruler"></i> Advanced Custom Fields</td>
-                            <td>Development</td>
-                            <td>2+ Million</td>
-                            <td>Custom meta boxes and flexible content fields</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            <h3>Popular Plugins Comparison</h3>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Plugin Name</th>
+                        <th>Category</th>
+                        <th>Active Installs</th>
+                        <th>Target Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WooCommerce</td>
+                        <td>E-Commerce</td>
+                        <td>5+ Million</td>
+                        <td>Online stores, digital downloads, and checkout flows</td>
+                    </tr>
+                    <tr>
+                        <td>Yoast SEO</td>
+                        <td>Search Optimization</td>
+                        <td>5+ Million</td>
+                        <td>XML sitemaps, meta descriptions, and schema markup</td>
+                    </tr>
+                    <tr>
+                        <td>Wordfence Security</td>
+                        <td>Security</td>
+                        <td>4+ Million</td>
+                        <td>Firewall rules, login protection, and file scans</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Custom Fields</td>
+                        <td>Development</td>
+                        <td>2+ Million</td>
+                        <td>Custom meta boxes and flexible content fields</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </div>
 
-        <section class="card">
-            <div class="card-header">
-                <i class="fa-solid fa-photo-film"></i>
-                <h2>WordPress Media</h2>
-            </div>
-            <div class="media-grid">
-                <div class="media-box">
-                    <div class="image-preview">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXP65Znjnj3A9TMPCnoSk0pU-kLEqPTs-f9m2vooGsy2YK8dtxtJJzXHI&s=10" alt="WordPress Overview">
-                    </div>
-                </div>
-                <div class="media-box">
-                    <div class="video-box">
-                        <iframe src="https://www.youtube.com/embed/4fzdDSMjteI?si=XRvDOylZicvjXAoL&amp;start=3863" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+        <hr>
 
-            <details>
-                <summary><i class="fa-solid fa-layer-group"></i> View Core Topics</summary>
-                <ul>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Theme</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Plugin</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Elementor</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Page</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Post</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_ECommerce</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Product_Page</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> WP_Header_Footer</li>
+        <div>
+                                    
+        <pre>
+
+ <h2>wordpress Media</h2>
+        </pre>
+            
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXP65Znjnj3A9TMPCnoSk0pU-kLEqPTs-f9m2vooGsy2YK8dtxtJJzXHI&s=10" alt="erorr">
+
+<hr>
+
+            <h3>Watch wordpress tutorial</h3>
+            
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4fzdDSMjteI?si=XRvDOylZicvjXAoL&amp;start=3863" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         <details>
+<ul>
+                    <li>WP_Theme</li>
+                    <li>WP_Plugin</li>
+                    <li>WP_Elementor</li>
+                    <li>WP_Page</li>
+                    <li>WP_Post</li>
+                    <li>WP_ECommerce</li>
+                    <li>WP_Product_Page </li>
+                    <li>WP_Header_Footer</li>
+                    
                 </ul>
-            </details>
-        </section>
 
-        <section class="card">
-            <div class="card-header">
-                <i class="fa-solid fa-paper-plane"></i>
-                <h2>Submit Feedback</h2>
-            </div>
-            <form id="feedbackForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                    </div>
-                </div>
+         </details>
+         <br>
+        </div>
 
-                <div class="form-group">
-                    <label for="topic">Primary Topic</label>
-                    <select name="topic" id="topic">
-                        <option value="wordpress">WordPress</option>
-                        <option value="elementor">Elementor</option>
-                        <option value="woocommerce">WooCommerce</option>
-                    </select>
-                </div>
+        <hr>
+<span>
 
-                <div class="form-group">
-                    <label for="thoughts">Your Thoughts</label>
-                    <textarea name="thoughts" id="thoughts" rows="5" placeholder="Write your thoughts about WordPress..." required></textarea>
-                </div>
+    <h2>submit form</h2>
 
-                <div class="btn-group">
-                    <button type="submit" class="btn-primary">
-                        <i class="fa-solid fa-paper-plane"></i> Submit
-                    </button>
-                    <button type="reset" class="btn-secondary">
-                        <i class="fa-solid fa-rotate-left"></i> Reset
-                    </button>
-                </div>
-            </form>
-        </section>
-    </div>
+<form action="#" method="POST">
+    
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-    <div id="toastNotification" class="toast">
-        <i class="fa-solid fa-circle-check"></i>
-        <span id="toastMessage">Feedback submitted successfully!</span>
-    </div>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
 
-    <script>
-        const form = document.getElementById('feedbackForm');
-        const toast = document.getElementById('toastNotification');
+    
+    <textarea name="thoughts" id="thoughts" rows="8" cols="35" placeholder="Write your thoughts about WordPress....."></textarea><br><br>
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            toast.classList.add('show');
-            form.reset();
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
-        });
-    </script>
-</body>
-</html>
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit"> <br><br>
+    <select name="topic" id="topic">
+        <option value="wordpress">wordpress</option>
+        <option value="elementor">elementor</option>
+        <option value="woocommerce">woocommerce</option>
+    </select>
+</form>
+<hr>
+</span>
+
+
+     <body/>       
